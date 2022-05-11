@@ -24,7 +24,8 @@
    }
 }
 
-@media screen and (min-width: 420px) {
+// desktop display
+@media screen and (min-width: 390px) {
     .nav {
         &__name {
             font-size: $text-size-subtitle-dt;
@@ -36,7 +37,8 @@
     }
 }
 
-@media screen and (max-width: 420px) {
+// phone display
+@media screen and (max-width: 390px) {
     .nav {
         &__links {
             display: none;

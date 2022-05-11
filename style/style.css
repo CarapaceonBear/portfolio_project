@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Inter:wght@400;500&display=swap");
 body {
-  margin: 30px;
+  margin: 0 30px;
   padding: 0;
   border: 0;
   font-size: 100%;
@@ -31,7 +31,7 @@ body {
   font-size: 20px;
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 390px) {
   .nav__name {
     font-size: 32px;
   }
@@ -39,8 +39,29 @@ body {
     display: none;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 390px) {
   .nav__links {
     display: none;
+  }
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.header__title {
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 390px) {
+  .header__title {
+    font-size: 128px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .header__title {
+    font-size: 80px;
   }
 }/*# sourceMappingURL=style.css.map */
