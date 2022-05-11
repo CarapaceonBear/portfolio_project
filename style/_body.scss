@@ -1,2 +1,15 @@
 @use "./variables" as *;
 @use "./mixins" as *;
+
+body {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+    font-family: $secondary-font;
+    background-color: $primary-color;
+    color: $text-color;
+}

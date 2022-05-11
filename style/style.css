@@ -1,1 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Inter:wght@400;500&display=swap");/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Inter:wght@400;500&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Inter", sans-serif;
+  background-color: #2C2A2A;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
