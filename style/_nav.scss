@@ -1,2 +1,25 @@
 @use "./variables" as *;
 @use "./mixins" as *;
+
+.nav {
+   display: flex;
+   justify-content: space-between; 
+   align-items: center;
+
+}
+
+@media screen and (min-width: 320px) {
+    .nav {
+        &__sidebar-icon {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .nav {
+        &__links {
+            display: none;
+        }
+    }
+}
