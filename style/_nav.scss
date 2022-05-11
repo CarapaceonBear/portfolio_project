@@ -6,17 +6,38 @@
    justify-content: space-between; 
    align-items: center;
 
+   &__name {
+       font-family: $primary-font;
+       font-weight: $primary-font-heavywieght;
+       font-size: $text-size-subtitle;
+       &--highlight {
+           color: $text-secondary-color;
+       }
+   }
+
+   &__button {
+        text-decoration: none;
+        color: $text-color;
+        font-weight: $secondary-font-lightweight;
+        font-size: 20px;
+    //    underline on hover
+   }
+
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 420px) {
     .nav {
+        &__name {
+            font-size: $text-size-subtitle-dt;
+        }
+
         &__sidebar-icon {
             display: none;
         }
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
     .nav {
         &__links {
             display: none;
