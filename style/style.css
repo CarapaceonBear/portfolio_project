@@ -31,7 +31,7 @@ body {
   font-size: 20px;
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 1200px) {
   .nav__name {
     font-size: 32px;
   }
@@ -39,7 +39,7 @@ body {
     display: none;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
   .nav__links {
     display: none;
   }
@@ -54,14 +54,35 @@ body {
   font-family: "Cormorant", serif;
   font-weight: 400;
 }
+.header__divider {
+  color: #d9bea5;
+  margin-left: 0;
+}
+.header__summary {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+}
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 1200px) {
   .header__title {
     font-size: 128px;
   }
+  .header__divider {
+    border: 3px solid;
+    width: 6%;
+  }
+  .header__summary {
+    width: 35%;
+  }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
   .header__title {
     font-size: 80px;
+  }
+  .header__divider {
+    border: 2px solid;
+    width: 25%;
   }
 }/*# sourceMappingURL=style.css.map */

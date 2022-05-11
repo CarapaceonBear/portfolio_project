@@ -11,23 +11,48 @@
         font-family: $primary-font;
         font-weight: $primary-font-lightweight;
     }
+
+    &__divider {
+        color: $highlight-color;
+        margin-left: 0;
+    }
+
+    &__summary {
+        font-family: $secondary-font;
+        font-size: $text-size-content;
+        font-weight: $secondary-font-lightweight;
+        line-height: 1.8;
+    }
 }
 
 // desktop display
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 1200px) {
     .header {
         &__title {
             font-size: $text-size-title-dt;
         }
-    }
 
+        &__divider {
+            border: 3px solid;
+            width: 6%;
+        }
+
+        &__summary {
+            width: 35%;
+        }
+    }
 }
 
 // phone display
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
     .header {
         &__title {
             font-size: $text-size-title;
+        }
+
+        &__divider {
+            border: 2px solid;
+            width: 25%;
         }
     }
 
