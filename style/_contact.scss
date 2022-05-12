@@ -2,11 +2,27 @@
 @use "./mixins" as *;
 
 .contact{
-    .callout {
-        width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 7vh;
+    &__callout {
         font-family: $primary-font;
         font-weight: $primary-font-lightweight;
         font-size: $text-size-title;
+        text-align: center;   
+    }
+    &__button {
+        font-family: $secondary-font;
+        font-weight: $secondary-font-heavyweight;
+        font-size: $text-size-content;
+
+        border: 1px solid $highlight-color;
+        background-color: $primary-color;
+        color: $text-color;
+
+        padding: 28px 90px;
     }
 
 }

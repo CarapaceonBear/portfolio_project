@@ -332,9 +332,25 @@ body {
     width: 100%;
   }
 }
-.contact .callout {
-  width: 100%;
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 7vh;
+}
+.contact__callout {
   font-family: "Cormorant", serif;
   font-weight: 400;
   font-size: 80px;
+  text-align: center;
+}
+.contact__button {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  border: 1px solid #d9bea5;
+  background-color: #2C2A2A;
+  color: white;
+  padding: 28px 90px;
 }/*# sourceMappingURL=style.css.map */
