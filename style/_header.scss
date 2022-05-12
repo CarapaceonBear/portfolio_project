@@ -18,10 +18,7 @@
     }
 
     &__summary {
-        font-family: $secondary-font;
-        font-size: $text-size-content;
-        font-weight: $secondary-font-lightweight;
-        line-height: 1.8;
+        @include contentStyling();
     }
 }
 

@@ -1,2 +1,73 @@
 @use "./variables" as *;
 @use "./mixins" as *;
+
+.about {
+    margin-top: 2rem;
+    &__title {
+        font-family: $primary-font;
+        font-weight: $primary-font-heavywieght;
+        height: 1rem;
+    }
+    &__divider {
+        color: $highlight-color;
+        margin-left: 0;
+        width: 15%;
+    }
+    &__summary {
+        @include contentStyling();
+    }
+}
+
+
+
+// desktop display
+@media screen and (min-width: 1200px) {
+    .about {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.25fr 0.25fr 1fr;
+        gap: 20px;
+        grid-template-areas:
+        "title photo"
+        "divider photo"
+        "summary photo";
+
+        margin-left: 200px;
+        width: 85%;
+
+        &__title {
+            grid-area: title;
+            font-size: $text-size-section-dt;
+        }
+        &__divider {
+            grid-area: divider;
+        }
+        &__photo {
+            grid-area: photo;
+            width: 65%;
+        }
+        &__summary {
+            grid-area: summary;
+            width: 90%;
+        }
+    }
+
+
+}
+
+// phone display
+@media screen and (max-width: 400px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        &__title {
+            font-size: $text-size-section;
+        }
+        &__photo {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            width: 100%;
+        }
+    }
+}
