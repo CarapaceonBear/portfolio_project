@@ -274,12 +274,6 @@ body {
     width: 100%;
   }
 }
-.history__experience {
-  width: 100%;
-}
-.history__interests {
-  width: 100%;
-}
 .history__title {
   margin-top: 4rem;
   font-family: "Cormorant", serif;
@@ -302,6 +296,21 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr;
+    gap: 20px;
+    grid-template-areas: "experience interests";
+    margin-left: 200px;
+    width: 85%;
+  }
+  .history__experience {
+    width: 80%;
+  }
+  .history__interests {
+    width: 80%;
+  }
   .history__title {
     font-size: 32px;
   }
@@ -315,5 +324,11 @@ body {
   }
   .history__title {
     font-size: 24px;
+  }
+  .history__experience {
+    width: 100%;
+  }
+  .history__interests {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
