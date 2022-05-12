@@ -1,2 +1,22 @@
 @use "./variables" as *;
 @use "./mixins" as *;
+
+.contact{
+    .callout {
+        width: 100%;
+        font-family: $primary-font;
+        font-weight: $primary-font-lightweight;
+        font-size: $text-size-title;
+    }
+
+}
+
+// desktop display
+@media screen and (min-width: 1200px) {
+
+}
+
+// phone display
+@media screen and (max-width: 400px) {
+
+}

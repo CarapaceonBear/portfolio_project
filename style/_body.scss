@@ -16,11 +16,15 @@ body {
 
 // desktop display
 // @media screen and (min-width: 1200px) {
-// 	.body {
+// 	body {
 // 		display: flex;
 // 		flex-direction: column;
+// 		justify-content: space-between;
 // 		align-items: center;
-// 		width: 100%
+// 		width: 100%;
+
+// 		height: auto;
+// 		flex-grow: 1;
 // 	}
 // }
 
