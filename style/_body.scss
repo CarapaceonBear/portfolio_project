@@ -13,3 +13,18 @@ body {
     background-color: $primary-color;
     color: $text-color;
 }
+
+// desktop display
+// @media screen and (min-width: 1200px) {
+// 	.body {
+// 		display: flex;
+// 		flex-direction: column;
+// 		align-items: center;
+// 		width: 100%
+// 	}
+// }
+
+// phone display
+@media screen and (max-width: 400px) {
+
+}

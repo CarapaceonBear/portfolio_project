@@ -1,2 +1,55 @@
 @use "./variables" as *;
 @use "./mixins" as *;
+
+.history {
+    &__experience {
+        width: 100%;
+    }
+    &__interests {
+        width: 100%;
+    }
+    &__title {
+        margin-top: 4rem;
+        font-family: $primary-font;
+        font-weight: $primary-font-heavywieght;
+    }
+    &__divider {
+        color: $highlight-color;
+        border: 1px solid;
+        margin-left: 0;
+        width: 15%;
+    }
+    &__thin-line {
+        color: $tertiary-color;
+        border: 1px solid
+    }
+    &__expander {
+        font-family: $primary-font;
+        font-size: $primary-font-lightweight;
+        font-size: $text-size-content;
+    }
+}
+
+
+
+// desktop display
+@media screen and (min-width: 1200px) {
+    .history {
+        &__title {
+            font-size: $text-size-subtitle-dt;
+        }
+    }
+}
+
+// phone display
+@media screen and (max-width: 400px) {
+    .history {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        &__title {
+            font-size: $text-size-subtitle;
+        }
+    }
+}

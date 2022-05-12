@@ -223,6 +223,7 @@ body {
 }
 .about__divider {
   color: #d9bea5;
+  border: 1px solid;
   margin-left: 0;
   width: 15%;
 }
@@ -271,5 +272,48 @@ body {
     margin-top: 3rem;
     margin-bottom: 3rem;
     width: 100%;
+  }
+}
+.history__experience {
+  width: 100%;
+}
+.history__interests {
+  width: 100%;
+}
+.history__title {
+  margin-top: 4rem;
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+}
+.history__divider {
+  color: #d9bea5;
+  border: 1px solid;
+  margin-left: 0;
+  width: 15%;
+}
+.history__thin-line {
+  color: #453F3F;
+  border: 1px solid;
+}
+.history__expander {
+  font-family: "Cormorant", serif;
+  font-size: 400;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 1200px) {
+  .history__title {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .history {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .history__title {
+    font-size: 24px;
   }
 }/*# sourceMappingURL=style.css.map */
