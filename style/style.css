@@ -85,4 +85,34 @@ body {
     border: 2px solid;
     width: 25%;
   }
+}
+.gallery {
+  width: 100%;
+}
+.gallery__title {
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+}
+.gallery__slide {
+  width: 100%;
+}
+.gallery__project-image {
+  width: 100%;
+}
+.gallery__project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .gallery__title {
+    font-size: 32px;
+  }
 }/*# sourceMappingURL=style.css.map */
