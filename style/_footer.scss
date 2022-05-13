@@ -1,2 +1,12 @@
 @use "./variables" as *;
 @use "./mixins" as *;
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    width: 100vw;
+    margin: 2rem 0 0 -30px;
+    background-color: $secondary-color;
+}

@@ -353,4 +353,14 @@ body {
   background-color: #2C2A2A;
   color: white;
   padding: 28px 90px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  width: 100vw;
+  margin: 2rem 0 0 -30px;
+  background-color: #3b3636;
 }/*# sourceMappingURL=style.css.map */
