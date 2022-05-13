@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Project</title>
     <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/b108659fdc.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="nav">
@@ -25,7 +26,10 @@
             </a>
         </div>
         <!-- this sidebar icon is not visible on desktop layout -->
-        <img src="" alt="sidebar-icon" class="nav__sidebar-icon">
+        <div class="nav__sidebar-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
     </nav>
 
     <header class="header">
@@ -44,6 +48,9 @@
     <div class="gallery">
         <h1 class="gallery__title">
             PORTFOLIO
+            <div class="gallery__down-icon">
+                <i class="fa-solid fa-arrow-turn-down fa-2xs"></i>
+            </div>    
         </h1>
         <!-- only the first three slides are visible on phone layout -->
         <div class="gallery__slide  slide-one">
@@ -55,9 +62,13 @@
                 <h2 class="gallery__project-name">
                     PROJECT <span class="gallery__project-number">1</span>
                 </h2>
-                <div class="gallery__icons">
-                    <img src="" alt="view icon" class="gallery__view-icon">
-                    <img src="" alt="link icon" class="gallery__link-icon">
+                <div class="gallery__icon">
+                    <div class="gallery__icon--view">
+                        <i class="fa-regular fa-eye "></i>
+                    </div>
+                    <div class="gallery__icon--code">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
                 </div>
             </div>
             <hr class="gallery__divider">
@@ -79,9 +90,13 @@
                 <h2 class="gallery__project-name">
                     PROJECT <span class="gallery__project-number">2</span>
                 </h2>
-                <div class="gallery__icons">
-                    <img src="" alt="view icon" class="gallery__view-icon">
-                    <img src="" alt="link icon" class="gallery__link-icon">
+                <div class="gallery__icon">
+                    <div class="gallery__icon--view">
+                        <i class="fa-regular fa-eye "></i>
+                    </div>
+                    <div class="gallery__icon--code">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
                 </div>
             </div>
             <hr class="gallery__divider">
@@ -103,9 +118,13 @@
                 <h2 class="gallery__project-name">
                     PROJECT <span class="gallery__project-number">3</span>
                 </h2>
-                <div class="gallery__icons">
-                    <img src="" alt="view icon" class="gallery__view-icon">
-                    <img src="" alt="link icon" class="gallery__link-icon">
+                <div class="gallery__icon">
+                    <div class="gallery__icon--view">
+                        <i class="fa-regular fa-eye "></i>
+                    </div>
+                    <div class="gallery__icon--code">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
                 </div>
             </div>
             <hr class="gallery__divider">
@@ -125,9 +144,13 @@
                 <h2 class="gallery__project-name">
                     PROJECT <span class="gallery__project-number">4</span>
                 </h2>
-                <div class="gallery__icons">
-                    <img src="" alt="view icon" class="gallery__view-icon">
-                    <img src="" alt="link icon" class="gallery__link-icon">
+                <div class="gallery__icon">
+                    <div class="gallery__icon--view">
+                        <i class="fa-regular fa-eye "></i>
+                    </div>
+                    <div class="gallery__icon--code">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
                 </div>
             </div>
             <hr class="gallery__divider">
@@ -147,9 +170,13 @@
                 <h2 class="gallery__project-name">
                     PROJECT <span class="gallery__project-number">5</span>
                 </h2>
-                <div class="gallery__icons">
-                    <img src="" alt="view icon" class="gallery__view-icon">
-                    <img src="" alt="link icon" class="gallery__link-icon">
+                <div class="gallery__icon">
+                    <div class="gallery__icon--view">
+                        <i class="fa-regular fa-eye "></i>
+                    </div>
+                    <div class="gallery__icon--code">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
                 </div>
             </div>
             <hr class="gallery__divider">
@@ -169,9 +196,13 @@
                 <h2 class="gallery__project-name">
                     PROJECT <span class="gallery__project-number">6</span>
                 </h2>
-                <div class="gallery__icons">
-                    <img src="" alt="view icon" class="gallery__view-icon">
-                    <img src="" alt="link icon" class="gallery__link-icon">
+                <div class="gallery__icon">
+                    <div class="gallery__icon--view">
+                        <i class="fa-regular fa-eye "></i>
+                    </div>
+                    <div class="gallery__icon--code">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
                 </div>
             </div>
             <hr class="gallery__divider">
@@ -251,9 +282,17 @@
     </div>
 
     <footer class="footer">
-        <img src="" alt="linkedin icon" class="linkedin-icon">
-        <img src="" alt="github icon" class="github-icon">
-        <img src="" alt="cv icon" class="cv-icon">
+        <div class="footer__icon">
+            <div class="footer__icon--linkedin">
+                <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+            </div>
+            <div class="footer__icon--github">
+                <i class="fa-brands fa-github fa-2xl"></i>
+            </div>
+            <div class="footer__icon--cv">
+                <p class="cv-icon">CV</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

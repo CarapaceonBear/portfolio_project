@@ -90,6 +90,9 @@ body {
   width: 100%;
 }
 .gallery__title {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
   font-family: "Cormorant", serif;
   font-weight: 700;
 }
@@ -108,11 +111,29 @@ body {
   display: flex;
   width: 100px;
 }
-.gallery__view-icon {
-  width: 45px;
+.gallery__icon {
+  display: flex;
+  justify-content: space-around;
 }
-.gallery__link-icon {
-  width: 45px;
+.gallery__icon--view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  background-color: #3b3636;
+  width: 2.5rem;
+  border-radius: 1.25rem;
+  margin: 0 0.5rem;
+}
+.gallery__icon--code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  background-color: #3b3636;
+  width: 2.5rem;
+  border-radius: 1.25rem;
+  margin: 0 0.5rem;
 }
 .gallery__divider {
   color: #d9bea5;
@@ -133,6 +154,10 @@ body {
   background-color: #453F3F;
   margin-right: 4px;
   padding: 2px 10px;
+}
+
+.fa-arrow-turn-down {
+  width: 100px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -363,4 +388,42 @@ body {
   width: 100vw;
   margin: 2rem 0 0 -30px;
   background-color: #3b3636;
+}
+.footer__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d9bea5;
+}
+.footer__icon--linkedin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  background-color: #453F3F;
+  width: 4rem;
+  border-radius: 2rem;
+  margin: 0 0.5rem;
+}
+.footer__icon--github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  background-color: #453F3F;
+  width: 4rem;
+  border-radius: 2rem;
+  margin: 0 0.5rem;
+}
+.footer__icon--cv {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  background-color: #453F3F;
+  width: 4rem;
+  border-radius: 2rem;
+  margin: 0 0.5rem;
 }/*# sourceMappingURL=style.css.map */
