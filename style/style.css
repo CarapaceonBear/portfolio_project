@@ -11,10 +11,20 @@ body {
   color: white;
 }
 
+@media screen and (min-width: 1200px) {
+  body {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .nav__name {
   font-family: "Cormorant", serif;
@@ -32,8 +42,18 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .nav {
+    width: 1600px;
+  }
   .nav__name {
     font-size: 32px;
+  }
+  .nav__links {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
   }
   .nav__sidebar-icon {
     display: none;
@@ -66,6 +86,9 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .header {
+    width: 1600px;
+  }
   .header__title {
     font-size: 128px;
   }
@@ -162,12 +185,16 @@ body {
 
 @media screen and (min-width: 1200px) {
   .gallery {
+    width: 1600px;
     min-height: 90vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr 3fr;
     gap: 20px;
     grid-template-areas: "title title title" "one two three" "four five six";
+  }
+  .gallery__slide {
+    width: 480px;
   }
   .gallery__title {
     font-size: 64px;
@@ -267,7 +294,7 @@ body {
     gap: 20px;
     grid-template-areas: "title photo" "divider photo" "summary photo";
     margin-left: 200px;
-    width: 85%;
+    width: 1400px;
   }
   .about__title {
     grid-area: title;
@@ -328,7 +355,7 @@ body {
     gap: 20px;
     grid-template-areas: "experience interests";
     margin-left: 200px;
-    width: 85%;
+    width: 1400px;
   }
   .history__experience {
     width: 80%;
@@ -380,6 +407,11 @@ body {
   padding: 28px 90px;
 }
 
+@media screen and (min-width: 1200px) {
+  .contact {
+    width: 1600px;
+  }
+}
 .footer {
   display: flex;
   justify-content: center;
@@ -426,4 +458,10 @@ body {
   width: 4rem;
   border-radius: 2rem;
   margin: 0 0.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    width: 6000px;
+  }
 }/*# sourceMappingURL=style.css.map */

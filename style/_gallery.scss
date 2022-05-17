@@ -67,6 +67,8 @@
 // desktop display
 @media screen and (min-width: 1200px) {
     .gallery {
+        width: 1600px;
+
         min-height: 90vh;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -76,6 +78,9 @@
         "title title title"
         "one two three"
         "four five six";
+        &__slide {
+            width: 480px;
+        }
         &__title {
             font-size: $text-size-section-dt;
         }

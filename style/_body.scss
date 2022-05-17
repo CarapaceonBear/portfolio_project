@@ -15,18 +15,16 @@ body {
 }
 
 // desktop display
-// @media screen and (min-width: 1200px) {
-// 	body {
-// 		display: flex;
-// 		flex-direction: column;
-// 		justify-content: space-between;
-// 		align-items: center;
-// 		width: 100%;
+@media screen and (min-width: 1200px) {
+	body {
+		margin-left: auto;
 
-// 		height: auto;
-// 		flex-grow: 1;
-// 	}
-// }
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+}
 
 // phone display
 @media screen and (max-width: 400px) {
