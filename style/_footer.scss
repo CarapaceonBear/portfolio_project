@@ -4,13 +4,13 @@
 .footer {
     @include flexCenter();
     height: 7rem;
-    width: 100vw;
+    width: 110%;
     margin: 2rem 0 0 -30px;
-    background-color: $secondary-color;
+    background-color: $new-color-dark;
 
     &__icon {
         @include flexCenter();
-        color: $highlight-color;
+        color: $new-color-black;
 
         &--linkedin {
             @include flexCenter();
@@ -26,6 +26,9 @@
             @include flexCenter();
             @include iconCircleBig();
         }
+    }
+    &__button {
+        color: $new-color-black;
     }
 }
 

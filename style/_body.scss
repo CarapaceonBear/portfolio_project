@@ -2,31 +2,24 @@
 @use "./mixins" as *;
 
 body {
-    margin: 0 30px;
+    margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 
+	width: 100%;
+	min-width: 300px;
+	max-width: 2000px;
+	margin: auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
     font-family: $secondary-font;
-    background-color: $primary-color;
-    color: $text-color;
-}
-
-// desktop display
-@media screen and (min-width: 1200px) {
-	body {
-		margin-left: auto;
-
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: center;
-	}
-}
-
-// phone display
-@media screen and (max-width: 400px) {
-
+    background-color: $new-color-black;
+    color: $new-color-white;
 }

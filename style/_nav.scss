@@ -5,49 +5,55 @@
    display: flex;
    justify-content: space-between; 
    align-items: center;
-   width: 100%;
+   width: 90%;
 
    &__name {
        font-family: $primary-font;
-       font-weight: $primary-font-heavywieght;
-       font-size: $text-size-subtitle;
+       font-weight: $font-heavy;
+       font-size: 3rem;
        &--highlight {
-           color: $text-secondary-color;
+           color: $new-color-light;
        }
    }
 
    &__button {
         text-decoration: none;
-        color: $text-color;
-        font-weight: $secondary-font-lightweight;
-        font-size: 20px;
-    //    underline on hover
+        font-family: $primary-font;
+        color: $new-color-white;
+        font-weight: $font-light;
+        font-size: 1.2rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // padding: 1rem;
+        height: 3rem;
+        width: 6rem;
+        border-radius: .5rem;
+
+        &:hover {
+            background-color: $new-color-dark;
+        }
+   }
+   &__links {
+       display: none;
    }
 }
 
-// desktop display
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 600px) {
     .nav {
-        width: 1600px;
+        width: 90%;
         &__name {
-            font-size: $text-size-subtitle-dt;
+            font-size: 3rem;
         }
         &__links {
-            width: 600px;
-
             @include flexCenter();
-            justify-content: space-around;
+            justify-content: flex-end;
+            gap: .4rem;
+
         }
         &__sidebar-icon {
-            display: none;
-        }
-    }
-}
-
-// phone display
-@media screen and (max-width: 400px) {
-    .nav {
-        &__links {
             display: none;
         }
     }

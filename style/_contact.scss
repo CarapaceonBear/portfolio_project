@@ -9,32 +9,26 @@
     margin: 7vh;
     &__callout {
         font-family: $primary-font;
-        font-weight: $primary-font-lightweight;
-        font-size: $text-size-title;
+        font-weight: $font-light;
+        font-size: 5rem;
         text-align: center;   
     }
     &__button {
         font-family: $secondary-font;
-        font-weight: $secondary-font-heavyweight;
-        font-size: $text-size-content;
+        font-weight: $font-heavy;
+        font-size: 1.4rem;
 
-        border: 1px solid $highlight-color;
-        background-color: $primary-color;
-        color: $text-color;
+        border: 1px solid $new-color-light;
+        border-radius: 1rem;
+        background-color: $new-color-dark;
+        color: $new-color-white;
 
         padding: 28px 90px;
+
+        &:hover {
+            background-color: $new-color-accent;
+            color: $new-color-black;
+        }
     }
-
-}
-
-// desktop display
-@media screen and (min-width: 1200px) {
-    .contact {
-        width: 1600px;
-    }
-}
-
-// phone display
-@media screen and (max-width: 400px) {
 
 }
