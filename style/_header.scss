@@ -1,0 +1,51 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    width: 90%;
+    
+    &__title {
+        font-family: $primary-font;
+        font-weight: $font-light;
+        font-size: 5rem;
+    }
+    &__divider {
+        color: $new-color-mid;
+        margin-left: 0;
+        border: 2px solid;
+        width: 25%;
+    }
+    &__summary {
+        @include contentStyling();
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .header {
+        &__title {
+            font-size: 4rem;
+        }
+        &__divider {
+            border: 3px solid;
+            width: 6%;
+        }
+        &__summary {
+            width: 50%;
+        }
+    }
+}
+@media screen and (min-width: 900px) {
+    .header {
+        &__title {
+            font-size: 6rem;
+        }
+        &__summary {
+            width: 35%
+        }
+    }
+}

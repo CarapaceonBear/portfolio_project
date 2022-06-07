@@ -1,0 +1,25 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+body {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+	width: 100%;
+	min-width: 300px;
+	max-width: 2000px;
+	margin: auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+    font-family: $secondary-font;
+    background-color: $new-color-black;
+    color: $new-color-white;
+}

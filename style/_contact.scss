@@ -1,0 +1,34 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 7vh;
+    &__callout {
+        font-family: $primary-font;
+        font-weight: $font-light;
+        font-size: 5rem;
+        text-align: center;   
+    }
+    &__button {
+        font-family: $secondary-font;
+        font-weight: $font-heavy;
+        font-size: 1.4rem;
+
+        border: 1px solid $new-color-light;
+        border-radius: 1rem;
+        background-color: $new-color-dark;
+        color: $new-color-white;
+
+        padding: 28px 90px;
+
+        &:hover {
+            background-color: $new-color-accent;
+            color: $new-color-black;
+        }
+    }
+
+}

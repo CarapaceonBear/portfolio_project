@@ -1,0 +1,96 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.about {
+    width: 90%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    &__title {
+        font-family: $primary-font;
+        font-weight: $font-heavy;
+        font-size: 3rem;
+        height: 1rem;
+    }
+    &__divider {
+        color: $new-color-mid;
+        border: 2px solid;
+        margin-left: 0;
+        width: 15%;
+    }
+    &__summary {
+        @include contentStyling();
+    }
+    &__photo {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+    &__photo-accent {
+        display: none;
+    }
+}
+
+// desktop display
+@media screen and (min-width: 600px) {
+    .about {
+        display: grid;
+
+        grid-template-columns: 48% 48%;
+        grid-template-rows: 5rem 1rem 30rem;
+        gap: 20px;
+        grid-template-areas:
+        "title photo"
+        "divider photo"
+        "summary photo";
+
+        width: 70%;
+        margin: auto;
+
+        &__title {
+            margin: 0;
+            grid-area: title;
+            font-size: 4rem;
+        }
+        &__divider {
+            height: 0;
+            grid-area: divider;
+        }
+        &__photo-holder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: photo;
+            position: relative;
+        }
+        &__photo {
+            margin: 0;
+            width: 100%;
+            max-height: 420px;
+            max-width: 370px;
+        }
+        &__photo-accent {
+            display: block;
+            position: absolute;
+            z-index: -1;
+            bottom: 2rem;
+            right: -3rem;
+
+            background-color: $new-color-accent;
+            height: 10rem;
+            width: 10rem;
+        }
+        &__summary {
+            grid-area: summary;
+            width: 90%;
+        }
+    }
+}
+@media screen and (min-width: 1600px) {
+    .about {
+        &__photo-accent {
+            bottom: 2;
+            right: 3rem;
+        }
+    }
+}

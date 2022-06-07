@@ -5,9 +5,331 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Project</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/b108659fdc.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <nav class="nav">
+        <h1 class="nav__name">
+            Will <span class="nav__name--highlight">Smith.</span>
+        </h1>
+        <!-- these nav links are not visible on phone layout -->
+        <div class="nav__links">
+            <a href="#about" class="nav__button">
+                About
+            </a>
+            <a href="#portfolio" class="nav__button">
+                Portfolio
+            </a>
+            <a href="#contact" class="nav__button">
+                Contact
+            </a>
+        </div>
+        <!-- this sidebar icon is not visible on desktop layout -->
+        <div class="nav__sidebar-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
+    </nav>
+
+    <header class="header">
+        <h1 class="header__title">
+            Junior Software Developer.
+        </h1>
+        <hr class="header__divider">
+        <p class="header__summary">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Neque hic earum aspernatur provident animi repellat obcaecati, 
+            in reiciendis incidunt velit eius unde culpa, minima, saepe 
+            delectus labore nobis blanditiis commodi?
+        </p>
+    </header>
     
+    <section class="gallery" id="portfolio">
+        <h1 class="gallery__title">PORTFOLIO
+            <i class="fa-solid fa-arrow-turn-down fa-2xs"></i> 
+        </h1>
+        <div class="gallery__slides">
+            <div class="gallery__slide">
+                <div class="gallery__image-holder">
+                    <img src="./images/chess_splash.png" alt="javascript chess game"
+                    class="gallery__image">
+                </div>
+                <div class="gallery__project-header">
+                    <h2 class="gallery__project-name">
+                        Chess web game
+                    </h2>
+                    <div class="gallery__icons">
+                        <a href="https://carapaceonbear.github.io/chess_web_game/">
+                            <button class="gallery__icon">
+                                <i class="fa-regular fa-eye fa-xl"></i>
+                            </button>
+                        </a>
+                        <a href="https://github.com/CarapaceonBear/chess_web_game">
+                            <button class="gallery__icon">
+                                <i class="fa-solid fa-code fa-xl"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <hr class="gallery__divider">
+                <div class="gallery__technologies">
+                    <h3 class="gallery__technology-bubble">
+                        JavaScript
+                    </h3>
+                    <h3 class="gallery__technology-bubble">
+                        SCSS
+                    </h3>
+                </div>
+            </div>
+            <div class="gallery__slide">
+                <div class="gallery__image-holder">
+                    <img src="./images/calculator_splash.png" alt="javascript calculator"
+                    class="gallery__image">
+                </div>
+                <div class="gallery__project-header">
+                    <h2 class="gallery__project-name">
+                        Calculator web app
+                    </h2>
+                    <div class="gallery__icons">
+                        <a href="https://carapaceonbear.github.io/calculator_web_app/">
+                            <button class="gallery__icon">
+                                <i class="fa-regular fa-eye fa-xl"></i>
+                            </button>
+                        </a>
+                        <a href="https://github.com/CarapaceonBear/calculator_web_app">
+                            <button class="gallery__icon">
+                                <i class="fa-solid fa-code fa-xl"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <hr class="gallery__divider">
+                <div class="gallery__technologies">
+                    <h3 class="gallery__technology-bubble">
+                        Javascript
+                    </h3>
+                    <h3 class="gallery__technology-bubble">
+                        SCSS
+                    </h3>
+                </div>
+            </div>
+            <div class="gallery__slide">
+                <div class="gallery__image-holder">
+                    <img src="./images/project_placeholder_ph.png" alt=""
+                    class="gallery__image">
+                </div>
+                <div class="gallery__project-header">
+                    <h2 class="gallery__project-name">
+                        Project name
+                    </h2>
+                    <div class="gallery__icons">
+                        <a href="">
+                            <button class="gallery__icon">
+                                <i class="fa-regular fa-eye fa-xl"></i>
+                            </button>
+                        </a>
+                        <a href="">
+                            <button class="gallery__icon">
+                                <i class="fa-solid fa-code fa-xl"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <hr class="gallery__divider">
+                <div class="gallery__technologies">
+                    <h3 class="gallery__technology-bubble">
+                        Javascript
+                    </h3>
+                    <h3 class="gallery__technology-bubble">
+                        SCSS
+                    </h3>
+                </div>
+            </div>
+            <div class="gallery__slide">
+                <div class="gallery__image-holder">
+                    <img src="./images/project_placeholder_ph.png" alt=""
+                    class="gallery__image">
+                </div>
+                <div class="gallery__project-header">
+                    <h2 class="gallery__project-name">
+                        Project name
+                    </h2>
+                    <div class="gallery__icons">
+                        <a href="">
+                            <button class="gallery__icon">
+                                <i class="fa-regular fa-eye fa-xl"></i>
+                            </button>
+                        </a>
+                        <a href="">
+                            <button class="gallery__icon">
+                                <i class="fa-solid fa-code fa-xl"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <hr class="gallery__divider">
+                <div class="gallery__technologies">
+                    <h3 class="gallery__technology-bubble">
+                        Javascript
+                    </h3>
+                    <h3 class="gallery__technology-bubble">
+                        SCSS
+                    </h3>
+                </div>
+            </div>
+            <div class="gallery__slide">
+                <div class="gallery__image-holder">
+                    <img src="./images/project_placeholder_ph.png" alt=""
+                    class="gallery__image">
+                </div>
+                <div class="gallery__project-header">
+                    <h2 class="gallery__project-name">
+                        Project name
+                    </h2>
+                    <div class="gallery__icons">
+                        <a href="">
+                            <button class="gallery__icon">
+                                <i class="fa-regular fa-eye fa-xl"></i>
+                            </button>
+                        </a>
+                        <a href="">
+                            <button class="gallery__icon">
+                                <i class="fa-solid fa-code fa-xl"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <hr class="gallery__divider">
+                <div class="gallery__technologies">
+                    <h3 class="gallery__technology-bubble">
+                        Javascript
+                    </h3>
+                    <h3 class="gallery__technology-bubble">
+                        SCSS
+                    </h3>
+                </div>
+            </div>
+            <div class="gallery__slide">
+                <div class="gallery__image-holder">
+                    <img src="./images/project_placeholder_ph.png" alt=""
+                    class="gallery__image">
+                </div>
+                <div class="gallery__project-header">
+                    <h2 class="gallery__project-name">
+                        Project name
+                    </h2>
+                    <div class="gallery__icons">
+                        <a href="">
+                            <button class="gallery__icon">
+                                <i class="fa-regular fa-eye fa-xl"></i>
+                            </button>
+                        </a>
+                        <a href="">
+                            <button class="gallery__icon">
+                                <i class="fa-solid fa-code fa-xl"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <hr class="gallery__divider">
+                <div class="gallery__technologies">
+                    <h3 class="gallery__technology-bubble">
+                        Javascript
+                    </h3>
+                    <h3 class="gallery__technology-bubble">
+                        SCSS
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        <h1 class="about__title">
+            ABOUT.
+        </h1>
+        <hr class="about__divider">
+        <div class="about__photo-holder">
+            <img src="./images/profile_bigger.jpg" alt="profile picture" class="about__photo">
+            <p class="about__photo-accent"></p>
+        </div>
+        <p class="about__summary">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Molestias provident dolorum nesciunt, libero explicabo dignissimos, 
+            esse harum aliquam saepe molestiae nobis beatae, mollitia temporibus 
+            hic deserunt eum perferendis non maxime.
+            <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et culpa
+            officiis laborum voluptatum tempore. Cum tempore praesentium soluta 
+            velit corrupti. Nemo esse animi assumenda beatae odit rerum quae ea vero.
+        </p>   
+    </section>
+
+    <div class="history">
+        <div class="history__experience">
+            <h1 class="history__title">
+                EXPERIENCE
+            </h1>
+            <hr class="history__divider">
+            <!-- the following Ps will be replaced with expandable boxes -->
+            <p class="history__expander">
+                Trainee Software Developer @ Nology
+            </p>
+            <hr class="history__thin-line">
+            <p class="history__expander">
+                Team Leader @ KFC UK&I
+            </p>
+            <hr class="history__thin-line">
+        </div>
+        <div class="history__interests">
+            <h1 class="history__title">
+                INTERESTS
+            </h1>
+            <hr class="history__divider">
+            <!-- the following Ps will be replaced with expandable boxes -->
+            <p class="history__expander">
+                Game Design
+            </p>
+            <hr class="history__thin-line">
+            <p class="history__expander">
+                Writing
+            </p>
+            <hr class="history__thin-line">
+            <p class="history__expander">
+                Singing
+            </p>
+            <hr class="history__thin-line">
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <h1 class="contact__callout">
+            Get in Touch.
+        </h1>
+        <button class="contact__button">
+            CONTACT 
+        </button>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__icon">
+            <a href="https://www.linkedin.com/in/-willsmith-/" class="footer__button">
+                <div class="footer__icon--linkedin">
+                    <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+                </div>
+            </a>
+            <a href="https://github.com/CarapaceonBear" class="footer__button">
+                <div class="footer__icon--github">
+                    <i class="fa-brands fa-github fa-2xl"></i>
+                </div>
+            </a>
+            <a href="" class="footer__button">
+                <div class="footer__icon--cv">
+                    <p class="cv-icon">CV</p>
+                </div>
+            </a>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,60 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.nav {
+   display: flex;
+   justify-content: space-between; 
+   align-items: center;
+   width: 90%;
+
+   &__name {
+       font-family: $primary-font;
+       font-weight: $font-heavy;
+       font-size: 3rem;
+       &--highlight {
+           color: $new-color-light;
+       }
+   }
+
+   &__button {
+        text-decoration: none;
+        font-family: $primary-font;
+        color: $new-color-white;
+        font-weight: $font-light;
+        font-size: 1.2rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // padding: 1rem;
+        height: 3rem;
+        width: 6rem;
+        border-radius: .5rem;
+
+        &:hover {
+            background-color: $new-color-dark;
+        }
+   }
+   &__links {
+       display: none;
+   }
+}
+
+@media screen and (min-width: 600px) {
+    .nav {
+        width: 90%;
+        &__name {
+            font-size: 3rem;
+        }
+        &__links {
+            @include flexCenter();
+            justify-content: flex-end;
+            gap: .4rem;
+
+        }
+        &__sidebar-icon {
+            display: none;
+        }
+    }
+}

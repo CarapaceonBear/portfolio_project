@@ -1,0 +1,40 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.footer {
+    @include flexCenter();
+    height: 7rem;
+    width: 110%;
+    margin: 2rem 0 0 -30px;
+    background-color: $new-color-dark;
+
+    &__icon {
+        @include flexCenter();
+        color: $new-color-black;
+
+        &--linkedin {
+            @include flexCenter();
+            @include iconCircleBig();
+        }
+        &--github {
+            @include flexCenter();
+            @include iconCircleBig();
+        }
+        &--cv {
+            font-size: 1.5rem;
+            font-weight: 700;
+            @include flexCenter();
+            @include iconCircleBig();
+        }
+    }
+    &__button {
+        color: $new-color-black;
+    }
+}
+
+// desktop display
+@media screen and (min-width: 1200px) {
+    .footer {
+        width: 6000px;
+    }
+}
